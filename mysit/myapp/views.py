@@ -29,6 +29,7 @@ def snippet_detail(request):
         
         if form.is_valid():
             print("VALID")
+            form.save()
             
     
     form = SnippetForm()
