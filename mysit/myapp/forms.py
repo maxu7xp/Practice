@@ -8,7 +8,7 @@ class ContactForm(forms.Form):
     subject = forms.CharField(required=False)
     body = forms.CharField(widget=forms.Textarea)
     
-class snippetForm(forms.ModelForm):
-    class meta:
+class SnippetForm(forms.ModelForm):
+    class Meta:
         model = Snippet
         fields = ('name', 'body')
