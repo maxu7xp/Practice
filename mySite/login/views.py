@@ -7,4 +7,4 @@ def view(request, ):
     return HttpResponse()
 
 def login(request):
-    return render()
+    return render(request, "login.html", {"form": loginForm})
