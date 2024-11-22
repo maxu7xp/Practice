@@ -5,3 +5,4 @@ class loginForm(ModelForm):
     class Meta:
         model = loginModel
         fields = ["email", "username", "password"]
+        

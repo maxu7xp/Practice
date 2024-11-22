@@ -11,9 +11,15 @@
     </head>
     <body>
         <form method="post">
-            <label>your info</label>
-            <input>hello</input>
+            {% csrf_token %}
+            <div id="fieldWrapper" value="">
+                {{form.email}}
+            </div>
+            <div id="fieldWrapper">
+                {{form.username}}
+            </div>
 
+        <input type="submit" value="myshit">
         </form>
         <script src="" async defer></script>
     </body>
