@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load widget_tweaks %}
 
 <html>
     <head>
@@ -16,7 +17,7 @@
                 {{form.email}}
             </div>
             <div id="fieldWrapper">
-                {{form.username}}
+                {% render_field form.username placeholder="myshit"%}
             </div>
 
         <input type="submit" value="myshit">
