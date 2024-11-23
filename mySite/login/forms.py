@@ -1,10 +1,10 @@
 from django.forms import ModelForm
-from login.models import loginModel
+from login.models import registerModel
 from django import forms
 
-class loginForm(ModelForm):
+class registerForm(ModelForm):
     class Meta:
-        model = loginModel
-        fields = ["email", "username", "password"]
+        model = registerModel
+        fields = ["email", "username", "password", "repeatpassword"]
         
     

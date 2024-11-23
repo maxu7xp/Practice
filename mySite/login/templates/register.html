@@ -13,14 +13,20 @@
     <body>
         <form method="post">
             {% csrf_token %}
-            <div id="fieldWrapper" value="">
-                {{form.email}}
+            <div id="fieldWrapper" >
+                {% render_field form.email placeholder="email"%}
             </div>
             <div id="fieldWrapper">
-                {% render_field form.username placeholder="myshit"%}
+                {% render_field form.username placeholder="username"%}
+            </div>
+            <div id="fieldWrapper">
+                {% render_field form.password placeholder="password"%}
+            </div>
+            <div id="fieldWrapper">
+                {% render_field form.password placeholder="password"%}
             </div>
 
-        <input type="submit" value="myshit">
+        <input type="submit" value="register">
         </form>
         <script src="" async defer></script>
     </body>

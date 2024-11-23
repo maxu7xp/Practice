@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from login.forms import loginForm
+from login.forms import registerForm
 
 def view(request, ):
     
     return HttpResponse()
 
-def login(request):
-    return render(request, "login.html", {"form": loginForm()})
+def register(request):
+    return render(request, "register.html", {"form": registerForm()})
