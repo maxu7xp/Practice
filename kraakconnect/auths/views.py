@@ -16,7 +16,7 @@ def mylogin(request):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('success')
+                return redirect('successName')
             
             else:
                 print("ye")
@@ -29,5 +29,5 @@ def mylogin(request):
 
 def Myregister(request):
     form = UserCreationForm
-    return render(request, "authTemplates/register.html"), {"form": form}
+    return render(request, "authTemplates/register.html", {"form": form}) 
 
