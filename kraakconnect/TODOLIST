@@ -1,14 +1,33 @@
 
 "het ideaal"
 1. de map
-    de map werkt met de google api en mensen kunnen zelf markers plaatsen.
-    op deze markers die ze plaatsen kunnen ze fotos plaatsen van die locatie. om andere de plek te laten zien.
-    
-    .2 types van locaties
-        je kan een tag kiezen:
-        *potentiele kraak, voor als je een huis ziet die leegstaat of misschien leegstaat.
-        *sowieso kraak, voor een huis waarvan je weet dat ze leegstaan.
-        *rave loco, voor een plek die top is om een rave te organizeren.
+    dit is een ingelogde feature.
+
+    .1 het plaatsen van een locatie
+        *1 markers
+            de map werkt met de google api en mensen kunnen zelf markers plaatsen.
+            op deze markers die ze plaatsen kunnen ze fotos plaatsen van die locatie. om andere de plek te laten zien.
+
+        *2 types van locaties
+            je kan een tag kiezen:
+                -potentiele kraak, voor als je een locatie ziet die leegstaat of misschien leegstaat.
+                -sowieso kraak, voor een locatie waarvan je weet dat het leegstaan.
+             
+            ook kan je erbij zetten watvoor gebouw het is:
+                -industrie
+                -huis
+                -kantoor
+                -boerderij
+
+    .2 kijken op de map
+        *1 je kan de map openen en alle locaties bekijken.
+        *2 je kan filteren:
+            -type gebouw
+            -regio
+            -wat voor kraak, potentiele/ sowieso
+        *3 je kan de locatie beoordelen, 1 tot 10 liefde.
+            - deze info word verbonden aan de postee zijn account,
+            dat word gedaan zodat mensen kunnen zien of hij goede locaties plaatst.
 
     
 2. forums
@@ -18,3 +37,7 @@
 3. groepen
     je kan een groep aan maken met vrienden/ mensen die je kent via de forums
     deze groepen kunnen hun eige map aanmaken en dat gebruiken om te delen.
+
+4. status
+    je kan 
+
