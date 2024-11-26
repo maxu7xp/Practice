@@ -28,6 +28,20 @@ def mylogin(request):
     return render(request, "authTemplates/login.html", {"form": form})
 
 def Myregister(request):
-    form = UserCreationForm
-    return render(request, "authTemplates/register.html", {"form": form}) 
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            
+            username = form.cleaned_data["username"]
+            password = form.cleaned_data["password1"]
+            user = authenticate(request, username=username, password=password)
+            
+            if user is not None:
+                login(request, user)
+                return redirect('successName')
+                
+    else:
+        form = UserCreationForm
+        return render(request, "authTemplates/register.html", {"form": form}) 
 
