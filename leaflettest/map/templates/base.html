@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href={% static "css/leaflet.css"%}>
+        <script src={% static "js/leaflet.js" %}></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        <link rel="stylesheet" href={% static "css/page.css" %}>
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+        
+    </head>
+  
+    <body id="mystuff">
+        {% block content%}
+        {% endblock %}
+    </body>
+</html>

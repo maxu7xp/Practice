@@ -1,4 +1,15 @@
+
+
 #map {
     width: 100%;
-    height: 100svh;
+    height: 50vh;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+#mystuff{
+    background-color: black;
 }

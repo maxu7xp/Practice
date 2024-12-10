@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    
+    <div id="map-center"></div>
+
+    <div id="map"></div>
+
+    <!-- So my idea was right, and that is pretty weird nah just well done!
+    we add a map centre div and set it to the value of the centre of the map!  we can access that value !
+    -->
+    
+    <div>
+
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+        
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var marker = L.marker([51.5, -0.09]).addTo(map);
+        L.Control.geocoder().addTo(map);
+        
+       
+        
+
+        function updateCenter() {
+            const center = map.getCenter();
+            document.getElementById("map-center").textContent = `Center: Latitude: ${center.lat.toFixed(4)}, Longitude: ${center.lng.toFixed(4)}`;
+          }
+          
+          // Update center coordinates on map move 
+          // not sure what the map.on does it loads it once i thought or something like that but nice to see this prog!
+          map.on('moveend', updateCenter);
+          
+          // Update center coordinates initially
+          updateCenter();
+        
+        
+     </script>
+
+     
+     {% endblock %}
+

@@ -5,7 +5,7 @@ export var Geocoder = L.Control.extend({
   options: {
     showUniqueResult: true,
     showResultIcons: false,
-    collapsed: true,
+    collapsed: false,
     expand: 'touch', // options: touch, click, anythingelse
     position: 'topright',
     placeholder: 'Search...',
