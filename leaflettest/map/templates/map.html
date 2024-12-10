@@ -14,6 +14,11 @@
 
     <script>
         var map = L.map('map').setView([51.505, -0.09], 13);
+
+        var layer = L.marker(latlng).addTo(map);
+        layer.addTo(map);
+        layer.remove();
+
         
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
@@ -21,6 +26,7 @@
         }).addTo(map);
         var marker = L.marker([51.5, -0.09]).addTo(map);
         L.Control.geocoder().addTo(map);
+        
         
        
         
