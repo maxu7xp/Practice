@@ -1,5 +1,6 @@
 from django.shortcuts import render
+from .forms import TypeOfLocation
 
 def myMap(request):
-    
-    return render(request, "map.html")
+    form = TypeOfLocation
+    return render(request, "map.html", {"form": form})
