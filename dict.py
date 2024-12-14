@@ -1,10 +1,7 @@
-x = {"a" : 20, "b" : 49}
-y = x["a"]
-print(y)
 
 
 
-mylist = [{"a" : 20, "b" : 49}]
+mylist = [{"a" : 40, "b" : 49}, {"a" : 25, "b" : 234}]
 
-print(mylist[0]["a"])
-## okay so it didnt work when we didnt create a new variable for it which is crazy i think.
+for dict in mylist:
+    print(dict["a"])

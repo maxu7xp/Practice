@@ -18,6 +18,8 @@
     <!-- So my idea was right, and that is pretty weird nah just well done!
     we add a map centre div and set it to the value of the centre of the map!  we can access that value !
     -->
+
+    {{ MarkersLocation| json_script:"MarkersLocation_json"}}
     
     <div>
 
@@ -35,7 +37,7 @@
         
 
         
-        var marker = L.marker([{{MarkerLocations.0.MarkerLatitude}}, -0.09]).addTo(map);
+        var marker = L.marker([0.09, -0.09]).addTo(map);
     
 
 
