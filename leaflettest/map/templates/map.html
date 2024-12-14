@@ -37,7 +37,11 @@
     
         DataBaseMarkers = JSON.parse(document.getElementById("MarkersLocation_json").textContent)
     
+        DataBaseMarkers.forEach(DataBaseMarkers => {
+            L.marker([DataBaseMarkers.MarkerLatitude, DataBaseMarkers.MarkerLongtitude]).addTo(map)
 
+
+        })
 
 
 
