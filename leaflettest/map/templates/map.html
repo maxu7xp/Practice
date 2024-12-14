@@ -31,9 +31,8 @@
         var marker = L.marker([51.5, -0.09]).addTo(map);
         L.Control.geocoder().addTo(map);
         
-       
-        
 
+        
         function updateCenter() {
             const center = map.getCenter();
             document.getElementById("map-center").textContent = `Center: Latitude: ${center.lat.toFixed(4)}, Longitude: ${center.lng.toFixed(4)}`;
