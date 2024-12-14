@@ -4,6 +4,15 @@
     
     <div id="map-center"></div>
 
+    <div id="dropdown">
+        <form method ="post">
+            {%csrf_token%}
+            {{form.dropDownLocationButton}}
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
     <div id="map"></div>
 
     <!-- So my idea was right, and that is pretty weird nah just well done!
@@ -40,14 +49,7 @@
         
      </script>
 
-        <div id="dropdown">
-            <form method ="post">
-                {%csrf_token%}
-                {{form.dropDownLocationButton}}
-
-                <input type="submit" value="submit">
-            </form>
-        </div>
+        
 
     </div>
      

@@ -9,4 +9,4 @@ LocationSelection = [
 class TypeOfLocation(forms.Form):
     
     dropDownLocationButton = forms.ChoiceField(choices=LocationSelection)
-    
+        
