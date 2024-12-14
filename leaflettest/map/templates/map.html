@@ -21,6 +21,9 @@
     
     <div>
 
+
+
+
     <script>
         var map = L.map('map').setView([51.505, -0.09], 13);
         
@@ -28,11 +31,15 @@
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-        var marker = L.marker([51.5, -0.09]).addTo(map);
         L.Control.geocoder().addTo(map);
         
 
         
+        var marker = L.marker([{{MarkerLocations.0.MarkerLatitude}}, -0.09]).addTo(map);
+    
+
+
+
         function updateCenter() {
             const center = map.getCenter();
             document.getElementById("map-center").textContent = `Center: Latitude: ${center.lat.toFixed(4)}, Longitude: ${center.lng.toFixed(4)}`;

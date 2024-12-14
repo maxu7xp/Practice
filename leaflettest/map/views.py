@@ -13,6 +13,7 @@ def myMap(request):
                 ## here we retrieve the right items for the db.  by checking if isHuis is set to 1
                 MarkersToPlace = MapLocationMarkers.objects.exclude(IsHuis = 0)
                 MarkerLocations = list(MarkersToPlace.values("MarkerLatitude", "MarkerLongtitude"))
+                print(MarkerLocations)
                 
                 return render(request, "map.html", {"form": form, "MarkersLocation": MarkerLocations},)
         
