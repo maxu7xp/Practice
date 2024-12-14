@@ -35,13 +35,15 @@
 
         var marker = L.marker([0.09, -0.09]).addTo(map);
     
-        DataBaseMarkers = JSON.parse(document.getElementById("MarkersLocation_json").textContent)
+        DataBaseMarkers = JSON.parse(document.getElementById("MarkersLocation_json").textContent);
+
+        DataBaseMarkers = Array.from(DataBaseMarkers);
     
         DataBaseMarkers.forEach(DataBaseMarkers => {
             L.marker([DataBaseMarkers.MarkerLatitude, DataBaseMarkers.MarkerLongtitude]).addTo(map)
 
 
-        })
+        });
 
 
 

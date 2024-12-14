@@ -1,7 +1,7 @@
 from django import forms
 
 LocationSelection = [
-    ('huis', 'Huis'),
+    ('IsHuis', 'Huis'),
     ('kantoor', 'Kantoor'),
     ('rave', 'Rave'),
     ]
