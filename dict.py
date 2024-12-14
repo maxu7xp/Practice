@@ -1,7 +1,7 @@
+import json
 
+x = '{"name":"john", "age": "24"}'
 
+y = json.loads(x)
 
-mylist = [{"a" : 40, "b" : 49}, {"a" : 25, "b" : 234}]
-
-for dict in mylist:
-    print(dict["a"])
+print(y["name"])
