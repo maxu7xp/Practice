@@ -6,3 +6,5 @@ class MapLocationMarkers(models.Model):
     IsRave = models.FloatField()
     MarkerLatitude = models.FloatField()
     MarkerLongtitude = models.FloatField()
+    Description = models.CharField(max_length=120)
+    
